@@ -79,20 +79,18 @@ primitive and reference
 primitives : number, string, null , undefined, boolean
 
 ```javascript
-
-```
-
 var a = 12;
 var b = a;
+```
+
 reference = [] () {}
 These values, when copied, the real value don't duplicate but the reference of the value get passed.
 
 ```javascript
-
-```
-
 var a = [1, 2, 3, 4];
 var b = a;
+```
+
 b has what a has, changing a will change for b and vise versa
 
 #### 12 -- how to copy reference values ✅
