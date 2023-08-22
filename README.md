@@ -36,7 +36,7 @@
 - \- updating object properties ✅
 - -- how to delete object properties ✅
 
-```
+```javascript
 var func = function () {
   console.log("Something");
 };
