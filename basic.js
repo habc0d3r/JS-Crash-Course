@@ -1,6 +1,7 @@
 // 1.- word vs keyword ✅
 // word: those which are not a part of the language
 // keyword: which are recognized by the language
+
 // 2. var, const, let
 // 3. hoisting : variable and functions are hoisted which means their declaration is moved on the top of code
 

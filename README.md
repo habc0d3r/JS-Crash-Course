@@ -1,5 +1,7 @@
 ### JavaScript
+
 #### \- Basics ✅
+
 #### -- Advanced
 
 - \- word vs keyword ✅
@@ -33,3 +35,16 @@
 - \- properties vs methods ✅
 - \- updating object properties ✅
 - -- how to delete object properties ✅
+
+```
+var func = function () {
+  console.log("Something");
+};
+
+function abcd(a) {
+  a;
+}
+abcd(function () {
+  console.log("hey");
+});
+```
