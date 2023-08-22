@@ -34,11 +34,11 @@ for (var i = 25; i < 50; i++) {
 }
 
 // while
-// var a = 12;
+var a = 12;
 
-// while (a < 20) {
-//   a++;
-// }
+while (a < 20) {
+  a++;
+}
 
 // 7. functions: we use function -
 //    1. to run our code in future not immediately.
@@ -54,7 +54,7 @@ function abcd(a, b, c) {
 
 abcd(223, 34, 5535);
 
-// 8. arrays = we store single value in a variable, but we can't store multiple values in a variable, that's where array comes in, which gives us the freedom to store multiple values or groups of values.
+// 8. arrays : we store single value in a variable, but we can't store multiple values in a variable, that's where array comes in, which gives us the freedom to store multiple values or groups of values.
 
 // array = group of values
 
