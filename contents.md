@@ -60,13 +60,13 @@ There are many features in JS, but some features that we use are not in JS, stil
 
 (The window object is a global object in the browser's JavaScript environment. It represents the browser window or tab and provides access to various properties and methods related to the browser and the webpage. It's a fundamental part of the browser's Document Object Model (DOM) and JavaScript execution environment.)
 
-### 5. -- Browser Context API
+### 5. -- Browser Context API ✅
 
 The term browser context typically refers to the environment in which a web page is loaded and executed. This environment includes elements like the Document Object Model (DOM), JavaScript execution, network requests, and more.
 
 (Think of it like separate rooms in a house: each room (context) can have its own things inside it, and they won't affect the other rooms. Similarly, the Browser Context API allows different parts of a web page to run without causing conflicts or security issues.)
 
-### 6. -- Stack
+### 6. -- Stack ✅
 
 The stack stores small pieces of information that a program needs to remember while it's running.
 
