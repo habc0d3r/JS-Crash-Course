@@ -1,14 +1,14 @@
-#### 1 - word vs keyword ✅
+### 1. - word vs keyword ✅
 
 word: those which are not a part of the language
 keyword: which are recognized by the language
 
-#### 2 - var, const, let ✅
+### 2. - var, const, let ✅
 
 var and let are used for declaring variables.
 const is used for declaring variables that hold constant values, meaning their values cannot be reassigned once they are assigned initially.
 
-#### 3 -- the differences: ✅
+### 3. -- the differences: ✅
 
 Two versions of JS: ES5 is old & ES6 is new.
 
@@ -54,39 +54,39 @@ let b = 10;
 
 We are using both ES5 and ES6, so we have all var, let, const.
 
-#### 4 -- Windows object ✅
+### 4. -- Windows object ✅
 
 There are many features in JS, but some features that we use are not in JS, still we are able to use them because JS use those from window or window object, which is a box of features given by browser to use with JS.
 
 (The window object is a global object in the browser's JavaScript environment. It represents the browser window or tab and provides access to various properties and methods related to the browser and the webpage. It's a fundamental part of the browser's Document Object Model (DOM) and JavaScript execution environment.)
 
-#### 5 -- Browser Context API
+### 5. -- Browser Context API
 
 The term browser context typically refers to the environment in which a web page is loaded and executed. This environment includes elements like the Document Object Model (DOM), JavaScript execution, network requests, and more.
 
 (Think of it like separate rooms in a house: each room (context) can have its own things inside it, and they won't affect the other rooms. Similarly, the Browser Context API allows different parts of a web page to run without causing conflicts or security issues.)
 
-#### 6 -- Stack
+### 6. -- Stack
 
 The stack stores small pieces of information that a program needs to remember while it's running.
 
 The stack is like a special memory area that holds small pieces of information, such as function calls, variables, and their values, while a program is running. It helps keep track of where the program is and what it needs to do next.
 
-#### 7 -- Heap memory ✅
+### 7. -- Heap memory ✅
 
 We use something to store the variables or data that we create, which is Heap memory.
 
 Heap memory is used to store more complex data like variables, objects, and larger data structures that we create in our program. When we make things like objects, arrays, or other custom data, they need more space than simple numbers or letters.
 
-#### 8 -- Execution context ✅
+### 8. -- Execution context ✅
 
 Execution context is a imaginary container where the function's code is executed and it's created whenever a function is called. It contains 3 things - variables, functions and lexical environment of the function.
 
-#### 9 -- Lexical environment ✅
+### 9. -- Lexical environment ✅
 
 Lexical environment is a chart that contains which things are/aren't accessible a particular function or we can say it contains it's scope and scope chain.
 
-#### 10 - Hoisting ✅
+### 10. - Hoisting ✅
 
 Variable and functions are hoisted which means their declaration is moved on the top of code.
 
@@ -107,9 +107,9 @@ and the declaration part moves to the top of the code hence returns undefined.
 undefined : It exists but don't know the value.
 not-defined : It doesn't exist.
 
-#### 11 - Types in JavaScript ✅
+### 11. - Types in JavaScript ✅
 
-##### Primitive and Reference
+##### There are two main categories of types: Primitive (Immutable) and Reference (Mutable)
 
 Primitives : number, string, null , undefined, boolean
 
@@ -129,7 +129,7 @@ var b = a;
 
 b has what a has, changing a will change for b and vise versa
 
-#### 12 -- How to copy reference values ✅
+#### 12. -- How to copy reference values ✅
 
 (spread operator[...])
 
@@ -146,16 +146,16 @@ var obj = {
 var copyObj = { ...obj };
 ```
 
-#### 13 - Conditionals ✅
+### 13. - Conditionals ✅
 
 if, else, else if
 
-#### 14 -- truthy vs falsy ✅
+### 14. -- truthy vs falsy ✅
 
 In JS whatever we write belongs to 2 types: either truthy or falsy
 falsy values are: 0 false undefined null NaN document.all
 
-#### 15 -- Switch ✅
+### 15. -- Switch ✅
 
 ```javascript
 switch (1) {
@@ -167,7 +167,7 @@ switch (1) {
 }
 ```
 
-#### 16 - Loops : for, while ✅
+### 16. - Loops : for, while ✅
 
 ##### for
 
@@ -187,7 +187,7 @@ while (a < 20) {
 }
 ```
 
-#### 17 -- foreach, for in, for of, do-while ✅
+### 17. -- foreach, for in, for of, do-while ✅
 
 ##### forEach : only runs on array.
 
@@ -225,7 +225,7 @@ do {
 } while (a < 15);
 ```
 
-#### 18 - functions ✅
+### 18. - functions ✅
 
 We use function -
 
@@ -233,7 +233,7 @@ We use function -
 2. to reuse our code
 3. to run our code every time with different data
 
-#### 19 - parameters, arguments ✅
+### 19. - parameters, arguments ✅
 
 parameter : variables which stores arguments
 arguments : real value which we pass when a function runs
@@ -246,11 +246,11 @@ function abcd(a, b, c) {
 abcd(223, 34, 5535);
 ```
 
-#### 20 -- callback function ✅
+### 20. -- callback function ✅
 
 The code that runs later or after a certain task we give a function to that code, and that function is called callback function. Callback function is passed as an argument to another function
 
-#### 21 -- What is First-class function ✅
+### 21. -- What is First-class function ✅
 
 It's a concept that says in JS we can use a function as a value.
 
@@ -269,13 +269,13 @@ abcd(function () {
 });
 ```
 
-#### 22 - arrays ✅
+### 22. - arrays ✅
 
 We store single value in a variable, but we can't store multiple values in a variable, that's where array comes in, which gives us the freedom to store multiple values or groups of values.
 
 array : group of values
 
-#### 23 - push, pop, shift, unshift, splice ✅
+### 23. - push, pop, shift, unshift, splice ✅
 
 ```javascript
 var arr = [23, 54, 664, 564, 236];
@@ -291,7 +291,7 @@ console.log(arr);
 arr.splice(2, 2); //remove element to a given count after a specific index
 ```
 
-#### 24 -- how array are made behind the scenes ✅
+### 24. -- how array are made behind the scenes ✅
 
 ```javascript
 var arr = [101, 242, 43, 644];
@@ -318,11 +318,11 @@ Array.isArray([]);
 Array.isArray({});
 ```
 
-#### 25 -- Why we can make negative indexes array in JavaScript ✅
+### 25. -- Why we can make negative indexes array in JavaScript ✅
 
 Because array in JS are not actually array but Objects. and in Objects we store something as key - value pair and key can be any string including negative numbers, so we can make negative indexes array in JS.
 
-#### 26 - objects ✅
+### 26. - objects ✅
 
 When we are talking about more than one person it is array,
 when we talk everything about one person it is object.
@@ -348,18 +348,18 @@ var person = {
 };
 ```
 
-#### 27 - properties vs methods ✅
+### 27. - properties vs methods ✅
 
 Property: Information about an object that describes its characteristics or attributes.
 Method: A property of an object that holds a value which happens to be a function. This function can be called to perform an action or task related to the object.
 
-#### 28 - updating object properties ✅
+### 28. - updating object properties ✅
 
 ```javascript
 person.email = "contact@harsh.com";
 ```
 
-#### 29 -- how to delete object properties ✅
+### 29. -- how to delete object properties ✅
 
 ```javascript
 var blah = {
