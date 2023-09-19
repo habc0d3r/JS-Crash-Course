@@ -1,4 +1,4 @@
-## JavaScript 
+## JavaScript
 
 ### 1. - word vs keyword ✅
 
@@ -370,4 +370,113 @@ var blah = {
 };
 
 delete blah.age;
+```
+
+### 30. higher order functions ✅
+
+Higher order functions are those functions which accepts other functions in a parameter or return another function.
+
+```javascript
+var arr = [1, 23, 4, 6, 63];
+
+arr.forEach(function () {});
+```
+
+### 31. Constructor functions ✅
+
+Normal function where "this" is used and "new" keyword is used when calling the function
+
+```javascript
+function templateOfBiscuit() {
+  this.width = 10;
+  this.height = 20;
+  this.color = "brown";
+  this.taste = "chocolaty";
+}
+
+var biscuit1 = new templateOfBiscuit(); //instance 1
+var biscuit2 = new templateOfBiscuit(); //instance 2
+```
+
+We use constructor function when we have to create more elements having similar kind of properties.
+
+```javascript
+function songInfo(name, artist, length, album) {
+  this.songName = name;
+  this.artist = artist;
+  this.length = length;
+  this.album = album;
+}
+
+var songOne = new songInfo("Reboti", "Dikshu", "5.23", "Reboti");
+var songTwo = new songInfo("Aayat", "Arijit Singh", "4.46", "Bajirao Mastani");
+```
+
+### 32. new keyword ✅
+
+(Whenever new keyword is used create a blank object in your mind.)
+New keyword always creates a blank object for the constructor function which is getting called just after new keyword.
+
+```javascript
+function person() {
+  this.age = 23;
+}
+
+new person();
+
+{
+  age: 23;
+}
+```
+
+### 33. iife (immediately invoked function expression) ✅
+
+iife is a concept to immediately call a function after creating it without needing to call it later
+
+```javascript
+var ans = (function () {
+  var privateval = 23;
+
+  return {
+    getter: function () {
+      console.log(privateval);
+    },
+    setter: function (val) {
+      privateval = val;
+    },
+  };
+})();
+```
+
+### 34. Prototype ✅
+
+Javascript by default adds a property to every object known as Prototype. Many properties and methods are already available to use inside prototype fo every object.
+
+```javascript
+var obj = {
+  name: "Hengul",
+};
+```
+
+### 35. Prototypal Inheritance ✅
+
+To pass parent's features or properties to their children with the help of prototype is called prototypal inheritance.
+
+```javascript
+var Human = {
+  canFly: false,
+  canWalk: true,
+  canTalk: true,
+  haveEmotions: true,
+  hasTwoLegs: true,
+  willDie: true,
+};
+
+var Hengul = {
+  canMakeModernWebsites: true,
+  canSing: true,
+  canCode: true,
+};
+
+Hengul.__proto__ = Human;
 ```
