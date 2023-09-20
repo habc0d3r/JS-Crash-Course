@@ -460,7 +460,7 @@ var obj = {
 
 ### 35. Prototypal Inheritance ✅
 
-To pass parent's features or properties to their children with the help of prototype is called prototypal inheritance.
+To pass parent's features or properties to their children with the help of prototype is called prototypal inheritance. Properties of parent don't directly get inherited by child but comes through prototype only, hence prototypal inheritance.
 
 ```javascript
 var Human = {
@@ -479,4 +479,137 @@ var Hengul = {
 };
 
 Hengul.__proto__ = Human;
+```
+
+### 36. this ✅
+
+this keyword in JS is a special keyword which changes it's value in different context.
+
+(In JS when a variable or a function is declared outside {} then it is considered to be in Global scope which is accessible from anywhere.)
+
+```javascript
+// In global scope gives => window
+
+console.log(this);
+
+// In function scope gives => window
+
+function test() {
+  console.log(this);
+}
+
+// In method scope or inside obj gives => object obj
+
+var obj = {
+  name: "akash",
+  doThis: function () {
+    console.log(this);
+  },
+};
+
+obj.doThis();
+
+// event listeners
+// In any method, "this" keyword always refers to parent object
+
+var btn = document.querySelector("button");
+
+btn.addEventListener("click", function () {
+  this.style.color = "teal";
+});
+```
+
+### 37. call, apply, bind ✅
+
+We use these methods when we have a function and an object & we have to call the function and change the by default value of "this", which is window, to an object.
+
+In other words, when we have to run a function where value of this is different but we want the value of this to be a different object, then .call, .apply and .bind are used.
+
+#### 37.1 call
+
+```javascript
+// when the value of this is window
+function abcd() {
+  console.log(this);
+}
+
+var obj = { age: 23 };
+
+abcd();
+
+// when value of this is pointing to the object
+// eg. 1
+function abcd() {
+  console.log(this.age);
+}
+
+var obj = { age: 23 };
+
+abcd.call(obj);
+
+// eg. 2
+function abcd(val, val2, val3) {
+  console.log(this.age, val, val2, val3);
+}
+
+var obj = { age: 23 };
+
+abcd.call(obj, 1, 2, 3);
+```
+
+#### 37.2 apply
+
+This is not so different from call, but we pass the values in an array, as apply only takes two arguments. The array itself doesn't get passed in parameter, but the individual values.
+
+```javascript
+function abcd(val, val2, val3) {
+  console.log(this.age, val, val2, val3);
+}
+
+var obj = { age: 23 };
+
+abcd.apply(obj, [1, 2, 3]);
+```
+
+#### 37.3 bind
+
+The bind method in JavaScript is used to create a new function that binds a specified this value to it and optionally prefills argument. Bind doesn't call the function straightaway but returns the function to call it later when needed.
+
+(It's used very much in React)
+
+```javascript
+function abcd() {
+  console.log(this);
+}
+
+var obj = { age: 23 };
+
+var bindedfunc = abcd.bind(obj);
+
+bindedfunc();
+```
+
+### 38. Pure & Impure functions ✅
+
+Pure function is any function which has these 2 features:
+
+i. It should always return same output for same input
+ii. It will never change/update the value of a global variable
+
+Pure function:
+
+```javascript
+function calc(val) {
+  return val + 2;
+}
+```
+
+Impure function: Changes a value of a global variable.
+
+```javascript
+let someval = 0;
+
+function calc(x) {
+  someval++;
+}
 ```
